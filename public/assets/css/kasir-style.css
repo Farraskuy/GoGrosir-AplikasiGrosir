@@ -1,0 +1,159 @@
+html:not([data-bs-theme="dark"]) {
+    --bs-tertiary-bg-rgb: 255, 255, 255;
+    --bs-secondary-bg-rgb: 248, 249, 250;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: white;
+}
+
+::-webkit-scrollbar-thumb {
+    border: 2.5px solid white;
+    background: #888;
+    border-radius: 15px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
+#table-loader {
+    visibility: visible;
+    opacity: 1;
+}
+
+#table-loader.hide {
+    visibility: hidden;
+    opacity: 0;
+}
+
+.row-barang {
+    max-width: 400px;
+}
+
+.table td.fit,
+.table th.fit {
+    padding-left: 15px;
+    padding-right: 15px;
+    white-space: nowrap;
+    width: 1%;
+}
+
+.wrap-text {
+    white-space: pre-wrap;
+    word-break: break-all;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+}
+
+#btn_bayar i,
+#btn_cetak_struk i.fa-spinner-third {
+    display: none;
+}
+
+#btn_bayar.load i,
+#btn_cetak_struk.loading i.fa-spinner-third {
+    display: inline-block;
+}
+
+.offcanvas-menu {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    gap: 20px;
+    height: 50px;
+    background-color: white;
+    transition: 0.2s ease;
+    box-shadow: none;
+    border: 1px 0 0 0 solid gray;
+    outline: none;
+    font-weight: 500;
+    
+}
+.offcanvas-menu:hover {
+    background-color: #ffeeaf;
+}
+.nav-kasir-bottom {
+    color: white;
+    text-decoration: none;
+    background-color: #00a545;
+}
+.nav-kasir-bottom:hover,
+.nav-kasir-bottom.active {
+    filter: grayscale(0.3);
+}
+
+.btn:disabled {
+    /* opacity: 1 !important; */
+    filter: grayscale(0.7);
+    transition: 0.2s ease;
+}
+
+.detail-penjualan-container .detail-penjualan-wrapper {
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.2s ease;
+}
+.detail-penjualan-container.info .detail-penjualan-wrapper {
+    display: none;
+}
+.detail-penjualan-container.show .detail-penjualan-wrapper {
+    opacity: 1;
+    visibility: visible;
+    display: block;
+}
+.detail-penjualan-container .info {
+    opacity: 0;
+    visibility: hidden;
+    display: none;
+}
+.detail-penjualan-container.info .info {
+    opacity: 1;
+    visibility: visible;
+    display: flex;
+}
+.detail-penjualan-container #loading {
+    opacity: 0;
+    visibility: hidden;
+}
+.detail-penjualan-container.loading #loading {
+    opacity: 1;
+    visibility: visible;
+}
+
+.wrapper-btn-aksi .btn-group-edit-cetak {
+    opacity: 1;
+    visibility: visible;
+    display: block;
+    transition: 0.2s ease;
+}
+.wrapper-btn-aksi .btn-group-simpan-batal {
+    opacity: 0;
+    visibility: hidden;
+    display: none;
+    transition: 0.2s ease;
+}
+.wrapper-btn-aksi.edit .btn-group-edit-cetak {
+    opacity: 0;
+    visibility: hidden;
+    display: none;
+}
+.wrapper-btn-aksi.edit .btn-group-simpan-batal {
+    opacity: 1;
+    visibility: visible;
+    display: block;
+}
+
+#btn_cetak_ulang i.fa-spinner-third {
+    display: none;
+}
+#btn_cetak_ulang.loading i.fa-spinner-third {
+    display: inline-block;
+}
